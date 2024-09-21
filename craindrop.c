@@ -4,6 +4,8 @@
 #include <wchar.h>
 #include <locale.h>
 
+#define PATTERNCONST 29
+
 /*
   Available colors:
   COLOR_BLACK
@@ -43,17 +45,17 @@ int main(int argc, char * argv[]){
   printw("b");*/
   int i = 0;
   //wchar_t unichar = 0x2588;
-  for(int k=2;k<100;k++){
+  for(int k=2;k==k;k++){
     clear();
     i = 0;
     while(i<LINES*COLS){
-      if(i%(k%5+2)!=0 && i%19==0)
+      if((i+(int)(i/COLS))%PATTERNCONST==(0+k%PATTERNCONST))
         printw("!"/*, unichar*/);
       else
         printw(" "/*, unichar*/);
       ++i;
     }
-    napms(100*10); //wait millisecond
+    napms(100); //wait millisecond
     refresh();
   }
   attroff(COLOR_PAIR(1));

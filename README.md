@@ -14,4 +14,4 @@ or with gcc\
 ## usage
 `./craindrop`
 ## screenshots
-![cannot load screenshot](screenshot.jpg)
+![cannot load screenshots](screenshots.gif)

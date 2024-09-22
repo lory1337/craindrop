@@ -45,7 +45,7 @@ int main(int argc, char * argv[]){
   printw("b");*/
   int i = 0;
   //wchar_t unichar = 0x2588;
-  for(int k=2;k==k;k++){
+  for(int k=2;TRUE;k++){
     clear();
     i = 0;
     while(i<LINES*COLS){
